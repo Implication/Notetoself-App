@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <CheckBox
+        android:text="@string/idea_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBoxIdea"
+        android:layout_below="@+id/editDescription"
+        android:layout_alignLeft="@+id/checkBoxTodo"
+        android:layout_alignStart="@+id/checkBoxTodo"
+        android:layout_marginTop="26dp" />
+
+    <CheckBox
+        android:text="@string/todo_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBoxTodo"
+        android:layout_marginLeft="34dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/checkBoxIdea"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:text="@string/important_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBoxImportant"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/checkBoxTodo"
+        android:layout_alignLeft="@+id/checkBoxTodo"
+        android:layout_alignStart="@+id/checkBoxTodo" />
+
+    <Button
+        android:text="@string/ok_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnOk"
+        android:layout_below="@+id/checkBoxImportant"
+        android:layout_alignLeft="@+id/checkBoxImportant"
+        android:layout_alignStart="@+id/checkBoxImportant"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textImeMultiLine|textPersonName"
+        android:ems="10"
+        android:id="@+id/editDescription"
+        android:layout_below="@+id/editTitle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="Description" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editTitle"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="Title" />
+
+    <Button
+        android:text="@string/cancel_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCancel"
+        android:layout_alignBaseline="@+id/btnOk"
+        android:layout_alignBottom="@+id/btnOk"
+        android:layout_toRightOf="@+id/btnOk"
+        android:layout_toEndOf="@+id/btnOk" />
+
+</RelativeLayout>
